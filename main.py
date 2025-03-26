@@ -8,11 +8,6 @@ from sqlalchemy.orm import Session
 
 
 
-
-
-# def create_db_and_tables():
-#     models.Base.metadata.create_all(bind=engine)
-
 app = FastAPI()
 models.Base.metadata.create_all(bind=engine)
 
